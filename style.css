@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(8, 179, 65);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.w-33-3{
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+}
+
+.card-container{
+    padding: 100px 0 0;
+}
+
+.card{
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+    margin: 0 25px;
+    height: 245px;
+    top: 90px;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.card-img{
+    width: 62%;
+    position: relative;
+    left: 20%;
+    top: -86px;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.5);
+    height: 258px;
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.card-decs{
+    text-align: center;
+    padding: 16px;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+.card-decs h2{
+    font-size: 38px;
+    margin-bottom: 21px;
+}
+
+.card-decs p{
+    font-size: 20px;
+}
+
+.card-decs a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: coral;
+    color: #fff;
+    padding: 15px 33px;
+    border-radius: 7px;
+    font-size: 17px;
+    margin-top: 28px;
+}
+
+.card:hover {
+    transition-delay: 0s;
+    height: 545px;
+    top: 0;
+}
+
+.card:hover .card-decs{
+    transition-delay: 0.5s;
+    visibility: visible;
+    opacity: 1;
+}
